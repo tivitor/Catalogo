@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/500.css';
+@import '@fontsource/playfair-display/600.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/outfit/300.css';
+@import '@fontsource/outfit/400.css';
+@import '@fontsource/outfit/500.css';
+
+@layer base {
+  :root {
+    /* Estrelas - Feminine Boutique Palette */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    /* Soft Pink - Primary brand color */
+    --primary: 349 65% 85%;
+    --primary-foreground: 0 0% 15%;
+
+    /* Beige/Gold - Secondary accent */
+    --secondary: 30 30% 75%;
+    --secondary-foreground: 0 0% 15%;
+
+    /* Muted tones */
+    --muted: 30 20% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Pink accent */
+    --accent: 349 65% 85%;
+    --accent-foreground: 0 0% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 20% 90%;
+    --input: 30 20% 90%;
+    --ring: 349 65% 85%;
+
+    --radius: 0.5rem;
+
+    /* Custom Estrelas tokens */
+    --estrelas-pink: 349 65% 85%;
+    --estrelas-pink-dark: 349 55% 75%;
+    --estrelas-beige: 30 30% 75%;
+    --estrelas-gold: 38 40% 70%;
+    --estrelas-cream: 40 30% 97%;
+    
+    /* WhatsApp Green */
+    --whatsapp: 142 70% 45%;
+    --whatsapp-hover: 142 70% 38%;
+
+    /* Typography */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Outfit', sans-serif;
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(0 0% 0% / 0.08);
+    --shadow-card: 0 2px 12px -2px hsl(0 0% 0% / 0.06);
+    --shadow-hover: 0 8px 30px -4px hsl(0 0% 0% / 0.12);
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 349 65% 85%;
+    --primary-foreground: 0 0% 15%;
+    --secondary: 30 30% 30%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 349 65% 85%;
+    --accent-foreground: 0 0% 15%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 349 65% 85%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full font-medium text-sm transition-all duration-300;
+    background-color: hsl(var(--whatsapp));
+    color: white;
+  }
+
+  .btn-whatsapp:hover {
+    background-color: hsl(var(--whatsapp-hover));
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .product-card {
+    @apply relative overflow-hidden rounded-lg bg-card transition-all duration-300;
+    box-shadow: var(--shadow-card);
+  }
+
+  .product-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+  }
+
+  .product-card:hover .product-image {
+    transform: scale(1.05);
+  }
+
+  .product-image {
+    @apply transition-transform duration-500 ease-out;
+  }
+
+  .filter-chip {
+    @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer;
+    background-color: hsl(var(--muted));
+    color: hsl(var(--muted-foreground));
+  }
+
+  .filter-chip:hover {
+    background-color: hsl(var(--estrelas-pink) / 0.3);
+    color: hsl(var(--foreground));
+  }
+
+  .filter-chip.active {
+    background-color: hsl(var(--estrelas-pink));
+    color: hsl(var(--primary-foreground));
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    @apply text-2xl md:text-3xl font-semibold tracking-tight;
+  }
+
+  .elegant-underline {
+    @apply relative inline-block;
+  }
+
+  .elegant-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5;
+    background: linear-gradient(90deg, hsl(var(--estrelas-pink)), hsl(var(--estrelas-beige)));
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--estrelas-pink-dark)), hsl(var(--estrelas-gold)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-soft {
+    background: linear-gradient(180deg, hsl(var(--estrelas-cream)), hsl(var(--background)));
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
