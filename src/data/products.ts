@@ -128,7 +128,7 @@ export const products: Product[] = [
   },
   {
     id: '8',
-    name: 'Vestidp Cléo',
+    name: 'Vestido Cléo',
     brand: 'cleo',
     price: 900.00,
     description: 'Vestido Cléo',
