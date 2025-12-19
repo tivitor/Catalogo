@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = '5538999999999'; // Substitua pelo número real da loja
+const WHATSAPP_NUMBER = '553832515513'; // Substitua pelo número real da loja
 
 export const generateWhatsAppLink = (productName: string, brandName: string): string => {
   const message = encodeURIComponent(
