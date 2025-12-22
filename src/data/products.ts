@@ -26,6 +26,16 @@ import calcaLeggingCouro12 from '@/assets/products/product-24.jpg';
 import calcaLeggingCouro13 from '@/assets/products/product-25.jpg';
 import calcaLeggingCouro14 from '@/assets/products/product-26.jpg';
 import calcaLeggingCouro15 from '@/assets/products/product-27.jpg';
+import calcaLeggingCouro16 from '@/assets/products/product-28.jpg';
+import calcaLeggingCouro17 from '@/assets/products/product-29.jpg';
+import calcaLeggingCouro18 from '@/assets/products/product-30.jpg';
+import calcaLeggingCouro19 from '@/assets/products/product-31.jpg';
+import calcaLeggingCouro20 from '@/assets/products/product-32.jpg';
+import calcaLeggingCouro21 from '@/assets/products/product-33.jpg';
+import calcaLeggingCouro22 from '@/assets/products/product-34.jpg';
+import calcaLeggingCouro23 from '@/assets/products/product-35.jpg';
+import calcaLeggingCouro24 from '@/assets/products/product-36.jpg';
+
 
 
 
