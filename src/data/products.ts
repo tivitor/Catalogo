@@ -104,7 +104,7 @@ export const products: Product[] = [
     price: 1054.00,
     description: 'Vestido Trimix.',
     details: ['Disponivel Bege e Preto'],
-    sizes: ['M', 'G'],
+    sizes: ['M', 'g'],
     image: calcaAlfaiataria,
   },
   {
