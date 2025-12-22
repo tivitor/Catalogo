@@ -26,14 +26,6 @@ import calcaLeggingCouro12 from '@/assets/products/product-24.jpg';
 import calcaLeggingCouro13 from '@/assets/products/product-25.jpg';
 import calcaLeggingCouro14 from '@/assets/products/product-26.jpg';
 import calcaLeggingCouro15 from '@/assets/products/product-27.jpg';
-import calcaLeggingCouro16 from '@/assets/products/product-28.jpg';
-import calcaLeggingCouro17 from '@/assets/products/product-29.jpg';
-import calcaLeggingCouro18 from '@/assets/products/product-30.jpg';
-import calcaLeggingCouro19 from '@/assets/products/product-31.jpg';
-import calcaLeggingCouro20 from '@/assets/products/product-32.jpg';
-import calcaLeggingCouro21 from '@/assets/products/product-33.jpg';
-import calcaLeggingCouro22 from '@/assets/products/product-34.jpg';
-import calcaLeggingCouro23 from '@/assets/products/product-35.jpg';
 
 
 
@@ -345,76 +337,6 @@ export const products: Product[] = [
     details: ['Apenas esse disponivel'],
     sizes: ['M'],
     image: calcaLeggingCouro15,
-  },
-    {
-    id: '29',
-    name: 'Vestido Manie',
-    brand: 'manie',
-    price: 792.00,
-    description: 'Apenas esse disponivel',
-    details: ['Apenas esse disponivel'],
-    sizes: ['P'],
-    image: calcaLeggingCouro16,
-  },
-    {
-    id: '30',
-    name: 'Vestido Manie',
-    brand: 'manie',
-    price: 968.00,
-    description: 'Apenas esse disponivel',
-    details: ['Apenas esse disponivel'],
-    sizes: ['P'],
-    image: calcaLeggingCouro17,
-  },
-      {
-    id: '31',
-    name: 'Conjunto Manie',
-    brand: 'manie',
-    price: 882.00,
-    description: 'Apenas esse disponivel',
-    details: ['Apenas esse disponivel'],
-    sizes: ['P'],
-    image: calcaLeggingCouro18,
-  },
-      {
-    id: '32',
-    name: 'Vestido Bfly',
-    brand: 'bfly',
-    price: 990.00,
-    description: 'Apenas esse disponivel',
-    details: ['Apenas esse disponivel'],
-    sizes: ['M'],
-    image: calcaLeggingCouro19,
-  },
-      {
-    id: '33',
-    name: 'Conjunto Manie',
-    brand: 'manie',
-    price: 849.00,
-    description: 'Apenas esse disponivel',
-    details: ['Apenas esse disponivel'],
-    sizes: ['P'],
-    image: calcaLeggingCouro20,
-  },
-      {
-    id: '34',
-    name: 'Conjunto Manie',
-    brand: 'manie',
-    price: 620.00,
-    description: 'Apenas esse disponivel',
-    details: ['Apenas esse disponivel'],
-    sizes: ['P e G'],
-    image: calcaLeggingCouro21,
-      },
-        {
-    id: '35',
-    name: 'Calça Jeanseria',
-    brand: 'jeanseria',
-    price: 358.00,
-    description: 'Apenas esse disponivel',
-    details: ['Apenas esse disponivel'],
-    sizes: ['42'],
-    image: calcaLeggingCouro22,
   },
 ];
 
