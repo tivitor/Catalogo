@@ -34,7 +34,6 @@ import calcaLeggingCouro20 from '@/assets/products/product-32.jpg';
 import calcaLeggingCouro21 from '@/assets/products/product-33.jpg';
 import calcaLeggingCouro22 from '@/assets/products/product-34.jpg';
 import calcaLeggingCouro23 from '@/assets/products/product-35.jpg';
-import calcaLeggingCouro24 from '@/assets/products/product-36.jpg';
 
 
 
@@ -416,16 +415,6 @@ export const products: Product[] = [
     details: ['Apenas esse disponivel'],
     sizes: ['42'],
     image: calcaLeggingCouro22,
-  },
-        {
-    id: '36',
-    name: 'Calça Bfly',
-    brand: 'bfly',
-    price: 620.00,
-    description: 'Apenas esse disponivel',
-    details: ['Apenas esse disponivel'],
-    sizes: ['38'],
-    image: calcaLeggingCouro23,
   },
 ];
 
